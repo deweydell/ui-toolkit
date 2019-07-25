@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-react-library",
+  "name": "@deweydell/ui-toolkit",
   "version": "1.0.0",
-  "description": "Boilerplate created with Rollup for publishing React modules",
+  "description": "nicola test ui",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -12,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelhenrique2000/boilerplate-react-library.git"
+    "url": "git+https://github.com/deweydell/ui-toolkit.git"
   },
-  "author": "Joel Henrique Silva Santos <joelhenriqueprincipal@gmail.com>",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joelhenrique2000/boilerplate-react-library/issues"
+    "url": "https://github.com/deweydell/ui-toolkit/issues"
   },
   "peerDependencies": {
     "props-types": "^15.5.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
-  "homepage": "https://github.com/joelhenrique2000/boilerplate-react-library#readme",
+  "homepage": "https://github.com/deweydell/ui-toolkit#readme",
   "dependencies": {
     "babel-loader": "^8.0.6"
   },
