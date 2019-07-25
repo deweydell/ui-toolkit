@@ -1,0 +1,20 @@
+.label {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: var(--semi-bold);
+
+  &.warning {
+    background-color: var(--usds-gold);
+  }
+  &.success {
+    background-color: var(--lightgreen);
+  }
+  &.information {
+    background-color: var(--usds-blue);
+  }
+  &.new {
+    background-color: var(--usds-purple);
+  }
+}

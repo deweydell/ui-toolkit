@@ -1,18 +1,18 @@
-import babel from 'rollup-plugin-babel'
-import commonjs from 'rollup-plugin-commonjs'
-import external from 'rollup-plugin-peer-deps-external'
-import postcss from 'rollup-plugin-postcss'
-import resolve from 'rollup-plugin-node-resolve'
-import url from 'rollup-plugin-url'
-import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
-import { terser } from 'rollup-plugin-terser'
+import babel from 'rollup-plugin-babel';
+import commonjs from 'rollup-plugin-commonjs';
+import external from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss';
+import resolve from 'rollup-plugin-node-resolve';
+import url from 'rollup-plugin-url';
+import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
+import { terser } from 'rollup-plugin-terser';
 
-import pkg from './package.json'
+import pkg from './package.json';
 
 export default {
   input: 'src/index.js',
   external: ['react', 'react-dom', 'prop-types'],
-  output: [ 
+  output: [
     {
       file: pkg.main,
       format: 'cjs',
@@ -22,7 +22,7 @@ export default {
       file: pkg.module,
       format: 'es',
       sourcemap: true
-    },
+    }
   ],
   plugins: [
     external(),
@@ -38,6 +38,6 @@ export default {
       exclude: 'node_modules/**'
     }),
     sizeSnapshot(),
-    terser(),
-  ],
+    terser()
+  ]
 };

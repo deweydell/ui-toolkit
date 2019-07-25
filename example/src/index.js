@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ExampleComponent from '../../dist/index';
+import { Label } from '../../dist/index';
 
-ReactDOM.render(<ExampleComponent />, document.getElementById('root'));
+ReactDOM.render(
+  <Label text="nicola" level="information" />,
+  document.getElementById('root')
+);
