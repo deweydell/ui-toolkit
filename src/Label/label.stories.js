@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf, addDecorator } from '@storybook/react';
 import { Label } from '.';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 // decorators should only be added once
 // best place is in config.js
@@ -12,7 +12,14 @@ addDecorator(withKnobs);
 
 storiesOf('Label', module)
   .add('informational', () => (
-    <Label text={text('text', 'Under Evaluation')} level="information" />
+    <Label
+      text={text('text', 'Under Evaluation')}
+      level={select(
+        'level',
+        ['information', 'success', 'warning'],
+        'information'
+      )}
+    />
   ))
   .add('requires action', () => (
     <Label text={text('text', 'More Homework Requested')} level="warning" />
