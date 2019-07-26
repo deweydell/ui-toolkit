@@ -1,0 +1,20 @@
+:root {
+  --white: #fff;
+  --evergreen: #118762;
+  --evergreendarker: #0a4d34;
+  --seagreen: #31b67b;
+  --lightgreen: #cdecdb;
+  --darkgray: #444;
+  --gray: #767676;
+  --primarygray: #626262;
+  --mediumgray: #ddd;
+  --lightgray: #f9f9f9;
+  --usds-red: #f9dede;
+  --usds-gold: #fff1d2;
+  --usds-blue: #e1f3f8;
+  --usds-purple: #ebe4f6;
+  --bold: 700;
+  --semi-bold: 600;
+  --regular: 400;
+  --light: 100;
+}

@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import { Label } from '../../dist/index';
 
 ReactDOM.render(
-  <Label text="nicola" level="information" />,
+  <Label text="Under Evaluation" level="information" />,
   document.getElementById('root')
 );

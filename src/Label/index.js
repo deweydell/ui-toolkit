@@ -1,4 +1,5 @@
 import React from 'react';
+import base from '../base.css';
 import styles from './label.module.css';
 
 const Label = ({ level, text }) => {
