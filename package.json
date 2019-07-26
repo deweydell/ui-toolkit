@@ -6,6 +6,7 @@
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "start": "rollup -c -w",
     "server": "webpack && webpack-dev-server",
     "storybook": "start-storybook",
